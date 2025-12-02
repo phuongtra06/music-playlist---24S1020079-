@@ -24,3 +24,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+def add_song():
+    title = input("Nhập tên bài hát: ")
+    artist = input("Nhập tên ca sĩ: ")
+    duration = int(input("Nhập thời lượng (giây): "))
+
+    song = {
+        'title': title,
+        'artist': artist,
+        'duration': duration
+    }
+    songs.append(song)
+    print("Đã thêm bài hát vào playlist.")    
